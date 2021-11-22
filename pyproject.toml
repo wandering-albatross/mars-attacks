@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mars_attacks"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Wiśniowski <jakub@cyanistes.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.9.0"
+numpy = "^1.21.4"
+Levenshtein = "^0.16.0"
+dependency-injector = "^4.37.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.10b0"
+
+[tool.poetry.scripts]
+mars = "mars_attacks.entrypoints.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
