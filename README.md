@@ -74,7 +74,7 @@ to use trackers that implement different search algorithms as well as to build d
 Invaders tracking implementation is based on the following concepts and assumptions:
 - sliding window that moves over the radar scan,
 - similarity matching is done for every window for every invader,
-- padding is applied to the radar scan to include possible partial matches around the edges.
+- padding is applied to the radar scan to include possible partial matches around the edges,
 - no image processing (opencv etc.) or scientific libs other than bare numpy and Levenhstein lib are used.
 
 Known Algorithm Issues
@@ -86,7 +86,7 @@ or prototyping. More on that in the Notes section in the function's docs.
 - No support for rotated invaders - we assume that they have no steering wheels.
 
 ### To Do
-- Add more extensive test cases, especially for different edge cases
+- Add more extensive test cases, especially for different edge cases.
 - Implement better trackers - faster and more accurate. The one here is clearly not optimal but at least does its job.
 Thankfully the architecture makes it simple to replace it with a one build by an experienced data scientist.
 
